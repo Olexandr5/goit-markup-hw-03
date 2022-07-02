@@ -4,12 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Студія</title>
+    <title>Студия</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles/modern-normalize.css" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/modern-normalize/modern-normalize.css"
+    />
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
@@ -21,26 +24,26 @@
         >
         <nav class="nav">
           <ul class="list nav-list">
-            <li class="nav-item">
+            <li class="nav-item item">
               <a class="link nav-link" href="./index.html">
                 <span class="nav-title">Студия</span></a
               >
             </li>
-            <li class="nav-item">
+            <li class="nav-item item">
               <a class="link nav-link" href="./portfolio.html">Портфолио</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item item">
               <a class="link nav-link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
         <ul class="list header-list">
-          <li class="header-item">
+          <li class="header-item item">
             <a class="link header-contacts" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
-          <li class="header-item">
+          <li class="header-item item">
             <a class="link header-contacts" href="tel:+380961111111"
               >+38 096 111 11 11</a
             >
@@ -50,38 +53,41 @@
     </header>
     <main>
       <!-- hero-section -->
-      <section class="hero">
+      <section class="hero section">
         <div class="hero container">
-          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+          <h1 class="hero-title">
+            Эффективные решения <br />
+            для вашего бизнеса
+          </h1>
           <button class="hero-btn" type="button">Заказать услугу</button>
         </div>
       </section>
       <!-- gallery-section -->
-      <section class="gallery">
+      <section class="gallery section">
         <div class="gallery container">
           <ul class="list gallery-list">
-            <li class="gallery-item">
+            <li class="gallery-item item">
               <h2 class="gallery-title">Внимание к деталям</h2>
               <p class="gallery-desc">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li class="gallery-item">
+            <li class="gallery-item item">
               <h2 class="gallery-title">Пунктуальность</h2>
               <p class="gallery-desc">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="gallery-item">
+            <li class="gallery-item item">
               <h2 class="gallery-title">Планирование</h2>
               <p class="gallery-desc">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li class="gallery-item">
+            <li class="gallery-item item">
               <h2 class="gallery-title">Современные технологии</h2>
               <p class="gallery-desc">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -92,11 +98,11 @@
         </div>
       </section>
       <!-- work-section -->
-      <section class="work">
+      <section class="work section">
         <div class="work container">
           <h2 class="work-title">Чем мы занимаемся</h2>
           <ul class="list work-list">
-            <li class="work-item">
+            <li class="work-item item">
               <img
                 class="work-img"
                 src="./images/studio/box1.jpg"
@@ -104,7 +110,7 @@
                 width="370"
               />
             </li>
-            <li class="work-item">
+            <li class="work-item item">
               <img
                 class="work-img"
                 src="./images/studio/box2.jpg"
@@ -112,7 +118,7 @@
                 width="370"
               />
             </li>
-            <li class="work-item">
+            <li class="work-item item">
               <img
                 class="work-img"
                 src="./images/studio/box3.jpg"
@@ -128,7 +134,7 @@
         <div class="teams container">
           <h2 class="teams-title">Наша команда</h2>
           <ul class="list teams-list">
-            <li class="teams-item">
+            <li class="teams-item item">
               <img
                 class="teams-img"
                 src="./images/studio/img1.jpg"
@@ -138,7 +144,7 @@
               <h3 class="teams-user">Игорь Демьяненко</h3>
               <p class="teams-position">Product Designer</p>
             </li>
-            <li class="teams-item">
+            <li class="teams-item item">
               <img
                 class="teams-img"
                 src="./images/studio/img2.jpg"
@@ -148,7 +154,7 @@
               <h3 class="teams-user">Ольга Репина</h3>
               <p class="teams-position">Frontend Developer</p>
             </li>
-            <li class="teams-item">
+            <li class="teams-item item">
               <img
                 class="teams-img"
                 src="./images/studio/img3.jpg"
@@ -158,7 +164,7 @@
               <h3 class="teams-user">Николай Тарасов</h3>
               <p class="teams-position">Marketing</p>
             </li>
-            <li class="teams-item">
+            <li class="teams-item item">
               <img
                 class="teams-img"
                 src="./images/studio/img4.jpg"
