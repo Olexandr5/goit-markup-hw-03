@@ -257,7 +257,6 @@ footer-section
 ====================== */
 .footer {
   background-color: #2f303a;
-  height: 252px;
 }
 .footer.container {
   padding-top: 60px;
@@ -272,12 +271,16 @@ footer-section
 }
 .footer-address {
   margin-top: 20px;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   font-style: normal;
   color: var(--logo-footer);
+}
+.footer-list {
+  padding-bottom: 64px;
 }
 .footer-link {
   font-weight: 400;
