@@ -11,14 +11,17 @@
     />
     <link
       rel="stylesheet"
-      href="./node_modules/modern-normalize/modern-normalize.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
     <!-- header-section -->
     <header class="header">
-      <div class="header container">
+      <div class="container">
         <a class="link logo-link" href="./index.html"
           >Web<span class="logo-header">Studio</span></a
         >
@@ -54,7 +57,7 @@
     <main>
       <!-- hero-section -->
       <section class="hero section">
-        <div class="hero container">
+        <div class="container">
           <h1 class="hero-title">
             Эффективные решения <br />
             для вашего бизнеса
@@ -62,34 +65,34 @@
           <button class="hero-btn" type="button">Заказать услугу</button>
         </div>
       </section>
-      <!-- gallery-section -->
-      <section class="gallery section">
-        <div class="gallery container">
-          <ul class="list gallery-list">
-            <li class="gallery-item item">
-              <h2 class="gallery-title">Внимание к деталям</h2>
-              <p class="gallery-desc">
+      <!-- features-section -->
+      <section class="features section">
+        <div class="container">
+          <ul class="list features-list">
+            <li class="features-item item">
+              <h2 class="features-title">Внимание к деталям</h2>
+              <p class="features-desc">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li class="gallery-item item">
-              <h2 class="gallery-title">Пунктуальность</h2>
-              <p class="gallery-desc">
+            <li class="features-item item">
+              <h2 class="features-title">Пунктуальность</h2>
+              <p class="features-desc">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="gallery-item item">
-              <h2 class="gallery-title">Планирование</h2>
-              <p class="gallery-desc">
+            <li class="features-item item">
+              <h2 class="features-title">Планирование</h2>
+              <p class="features-desc">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li class="gallery-item item">
-              <h2 class="gallery-title">Современные технологии</h2>
-              <p class="gallery-desc">
+            <li class="features-item item">
+              <h2 class="features-title">Современные технологии</h2>
+              <p class="features-desc">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
               </p>
@@ -99,7 +102,7 @@
       </section>
       <!-- work-section -->
       <section class="work section">
-        <div class="work container">
+        <div class="container">
           <h2 class="work-title">Чем мы занимаемся</h2>
           <ul class="list work-list">
             <li class="work-item item">
@@ -130,8 +133,8 @@
         </div>
       </section>
       <!-- teams-section -->
-      <section class="teams">
-        <div class="teams container">
+      <section class="teams section">
+        <div class="container">
           <h2 class="teams-title">Наша команда</h2>
           <ul class="list teams-list">
             <li class="teams-item item">
@@ -141,8 +144,10 @@
                 alt="user-image"
                 width="270"
               />
-              <h3 class="teams-user">Игорь Демьяненко</h3>
-              <p class="teams-position">Product Designer</p>
+              <div class="teams-wrapper">
+                <h3 class="teams-user">Игорь Демьяненко</h3>
+                <p class="teams-position">Product Designer</p>
+              </div>
             </li>
             <li class="teams-item item">
               <img
@@ -151,8 +156,10 @@
                 alt="user-image"
                 width="270"
               />
-              <h3 class="teams-user">Ольга Репина</h3>
-              <p class="teams-position">Frontend Developer</p>
+              <div class="teams-wrapper">
+                <h3 class="teams-user">Ольга Репина</h3>
+                <p class="teams-position">Frontend Developer</p>
+              </div>
             </li>
             <li class="teams-item item">
               <img
@@ -161,8 +168,10 @@
                 alt="user-image"
                 width="270"
               />
-              <h3 class="teams-user">Николай Тарасов</h3>
-              <p class="teams-position">Marketing</p>
+              <div class="teams-wrapper">
+                <h3 class="teams-user">Николай Тарасов</h3>
+                <p class="teams-position">Marketing</p>
+              </div>
             </li>
             <li class="teams-item item">
               <img
@@ -171,8 +180,10 @@
                 alt="user-image"
                 width="270"
               />
-              <h3 class="teams-user">Михаил Ермаков</h3>
-              <p class="teams-position">UI Designer</p>
+              <div class="teams-wrapper">
+                <h3 class="teams-user">Михаил Ермаков</h3>
+                <p class="teams-position">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -180,8 +191,8 @@
     </main>
     <!-- footer-section -->
     <footer class="footer">
-      <div class="footer container">
-        <a class="link logo-link" href="./index.html"
+      <div class="container">
+        <a class="link logo-link-pic" href="./index.html"
           >Web<span class="logo-footer">Studio</span></a
         >
         <address class="footer-address">

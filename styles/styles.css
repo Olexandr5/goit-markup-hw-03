@@ -35,13 +35,16 @@ ul {
   padding-left: 15px;
   padding-right: 15px;
 }
+.section {
+  padding: 94px 0;
+}
 /* /======================/
 header-section
 /======================/ */
-.header.section {
+.header {
   border-bottom: 1px solid #ececec;
 }
-.header.container {
+.header .container {
   display: flex;
   align-items: center;
 }
@@ -66,12 +69,6 @@ header-section
 .nav-item.item + .item {
   margin-left: 50px;
 }
-/* .nav-item:last-child {
-  margin-right: 0;
-} */
-/* .nav-item:not(:last-child) {
-  margin-right: 50px;
-} */
 .nav-title {
   color: var(--logo-text);
 }
@@ -115,19 +112,14 @@ header-section
 .header-list :focus {
   color: var(--logo-text);
 }
-.section {
-  margin-bottom: 94px;
-}
 /* /======================/
 hero-section
 /======================/ */
 .hero {
-  height: 600px;
-
+  padding: 200px 0;
   background-color: #2f303a;
 }
 .hero-title {
-  padding-top: 200px;
   margin-bottom: 30px;
 
   color: var(--logo-footer);
@@ -160,15 +152,18 @@ hero-section
   background-color: #188ce8;
 }
 /* ======================
-gallery-section
+features-section
 ====================== */
-.gallery-list {
+.features-list {
   display: flex;
 }
-.gallery-item.item + .item {
+.features-item.item + .item {
   margin-left: 30px;
 }
-.gallery-title {
+.features-item.item {
+  flex-basis: 270px;
+}
+.features-title {
   margin-bottom: 10px;
 
   font-weight: 700;
@@ -177,18 +172,20 @@ gallery-section
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.gallery-desc {
-  font-weight: 400;
+.features-desc {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+  color: var(--slave-text);
+}
+.features {
+  padding-bottom: 0;
 }
 /* ======================
 work-section
 ====================== */
 .work-list {
   display: flex;
-  /* justify-content: space-between; */
 }
 .work-title {
   margin-bottom: 50px;
@@ -211,13 +208,11 @@ teams-section
 
 .teams-list {
   display: flex;
-  /* justify-content: space-between; */
 }
 .teams-item.item + .item {
   margin-left: 30px;
 }
 .teams-title {
-  padding-top: 94px;
   margin-bottom: 50px;
 
   font-weight: 700;
@@ -236,7 +231,6 @@ teams-section
   text-align: center;
 }
 .teams-position {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
@@ -244,22 +238,28 @@ teams-section
   text-align: center;
 }
 .teams-item.item {
-  margin-bottom: 94px;
-  height: 368px;
-
   background-color: var(--logo-footer);
 }
-.teams-img {
-  margin-bottom: 30px;
+.teams-wrapper {
+  padding: 30px 0;
 }
+
 /* ======================
 footer-section
 ====================== */
 .footer {
+  padding: 60px 0;
+
   background-color: #2f303a;
 }
-.footer.container {
-  padding-top: 60px;
+
+.logo-link-pic {
+  color: var(--logo-text);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
 }
 .logo-footer {
   color: var(--logo-footer);
@@ -272,18 +272,13 @@ footer-section
 .footer-address {
   margin-top: 20px;
 
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   font-style: normal;
   color: var(--logo-footer);
 }
-.footer-list {
-  padding-bottom: 64px;
-}
 .footer-link {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -292,6 +287,12 @@ footer-section
 .footer-list :hover,
 .footer-list :focus {
   color: var(--logo-text);
+}
+.footer-list {
+  margin-top: 9px;
+}
+.footer-item:not(:first-child) {
+  margin-top: 9px;
 }
 /* ======================
 2 pages
@@ -345,7 +346,6 @@ portfolio-section
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
 }
 .portfolio-item {
   width: 370px;
@@ -358,16 +358,12 @@ portfolio-section
 .portfolio-item:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
-/* .portfolio-img {
-  padding-bottom: 20px;
-} */
 .portfolio-list-btn {
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 .portfolio-title {
-  padding-top: 20px;
   margin-bottom: 4px;
 
   font-weight: 700;
@@ -377,13 +373,12 @@ portfolio-section
 }
 .portfolio-desc {
   color: var(--slave-text);
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
 }
 .portfolio-border {
-  height: 110px;
+  padding: 20px 24px;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
